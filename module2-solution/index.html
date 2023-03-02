@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Module 2 Solition</title>
+    <style>
+
+/********** Base styles **********/
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        background-color: white;
+    }
+
+    h1 {
+        margin: 30px;
+        text-align: center;
+        font-family: Helvetica;
+        font-weight: bold;
+    }
+     div {
+        position: relative;
+        background-color: lightblue;
+        border: 1px solid black;
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: auto;
+        border: 1px solid black;
+        font-family: Helvetica;
+
+    }
+    section {
+        position: relative;
+        padding: 15px;
+        width: 100%;
+    }
+
+    p {
+        clear: right;
+    }
+
+    h2 {
+    float: right;
+    width: 100px;
+    padding: 5px;
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+    border: 1px solid black;
+    }
+
+    .h2-1 {
+        color: purple;
+        background-color: pink;
+    }
+
+    .h2-2 {
+        color: white;
+        background-color: magenta;
+    }
+
+    .h2-3 {
+        color: lightpink;
+        background-color: purple;
+    }
+
+    .content {
+        padding: 5px;
+        border: none;
+        background-color: lightblue;
+        margin: 0px;
+        height: 150px;
+        overflow: auto;
+    }
+
+
+/********** Large devices only DESKTOP **********/
+    @media (min-width: 992px) {
+        .col-lg-4 {
+            float: left;
+            width: 33.33%;
+        }
+    }
+
+/********** Medium devices only TABLET**********/
+    @media (min-width: 768px) and (max-width: 991px) {
+        .col-md-6 {
+            float: left;
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .col-md-12 {
+            float: left;
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+
+/********** Small devices only MOBILE**********/
+    @media (max-width: 767px) {
+        .col-sm-12 {
+            float: left;
+            width: 100%;
+        }
+    }
+</style>
+
+</head>
+<body>
+    <h1>Our Menu ☰</h1>
+    <section class="col-lg-4 col-md-6 col-sm-12">
+        <div>
+            <h2 class="h2-1">Chicken</h2>
+            <p class="content">Section 1. &#127831; Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+    <section class="col-lg-4 col-md-6 col-sm-12">
+        <div>
+            <h2 class="h2-2">Beef</h2>
+            <p class="content">Section 2. &#129385; Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+    </section>
+    <section class="col-lg-4 col-md-12 col-sm-12">
+        <div>
+            <h2 class="h2-3">Sushi</h2>
+            <p class="content">Section 3. &#127843; Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+</body>
